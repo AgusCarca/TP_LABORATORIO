@@ -24,16 +24,15 @@ int Restar (int x, int y){
 
 }
 //Divide los dos numeros enteros ingresados
-float Dividir (float x, float y){
-
-    float divisionResultado;
+float Dividir (int x, int y){
+    int divisionResultado;
     if (x==0||y==0){
-        printf ("No se puede dividir por cero.");
+            printf ("No se puede dividir por cero.");
     } else {
-        divisionResultado=(float) x/y;
+        divisionResultado=(float)x/y;
     }
 
-    return divisionResultado;
+
 
 }
 //Multiplica los dos numeros
