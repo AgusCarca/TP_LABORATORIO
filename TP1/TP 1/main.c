@@ -11,7 +11,8 @@ int main()
 
     do{
             //OPCIONES DEL USUARIO
-        printf("\n 1- Ingresar primer operando A= %d . \n 2-Ingresar segundo operando B= %d . \n 3-Calcular todas las operaciones. \n 4-Mostrar resultados.\n 5-Salir de la calculadora.",a,b);
+        printf ("BIENVENIDO A LA CALCULADORA DE AGUSTIN CARCACHA\n\n\n");
+        printf("\n 1- Ingresar primer operando A= %d . \n 2-Ingresar segundo operando B= %d . \n 3-Calcular todas las operaciones. \n 4-Mostrar resultados.\n 5-Salir de la calculadora.\n\n",a,b);
         scanf("%d", &opcion);
         system ("CLS");
         switch (opcion){
@@ -42,10 +43,10 @@ int main()
             printf ("El factorial de a es: %d\n", Factorial(a));
             printf ("El factorial de b es: %d\n", Factorial(b));
 
-            case 5:
+            /*case 5:
                 printf ("\n Saliendo...\n");
                 break;
-
+            */
 
         }
 

@@ -27,13 +27,10 @@ int Restar (int x, int y){
 float Dividir (float x, float y){
 
     float divisionResultado;
-    if (y==0){
-
+    if (x==0||y==0){
         printf ("No se puede dividir por cero.");
-    }
-    else{
+    } else {
         divisionResultado=(float) x/y;
-
     }
 
     return divisionResultado;
@@ -49,15 +46,16 @@ int Multiplicar(int x, int y){
 //Recibe el numero entero y devuelve el factorial
 
 int Factorial (int numero){
-    int factorizar;
-    int i;
 
-    factorizar=1;
-
-    for(i=numero; i > 1; i--){
-            factorizar = factorizar *1;
-
+    int factorizar = 1;
+    if (numero==0){
+        factorizar=1;
+    } else {
+        for (int i=1;i<=numero;i++){
+            factorizar = factorizar *i;
+        }
     }
+
 
     return factorizar;
 
